@@ -58,7 +58,7 @@ $(document).ready(function() {
     $("#navUpcoming2").addClass("active");
 
     $("#venmo-btn").click(function() {
-      var url = "https://venmo.com/?txn=pay&recipients=MikeyMiller&audience=public";
+      var url = "https://venmo.com/?txn=pay&recipients=Shreshth&audience=public";
       var tcks = $("#ticketNumber").val();
       var amt = tcks * 9;
       /*if (tcks >= 6)
@@ -75,7 +75,7 @@ $(document).ready(function() {
       var ref = $("#refname").val();
       var day = $("input[name=optionsRadios]:checked").val();
       var amount = "&amount=" + amt;
-      var note = "&note=OneActs2016%20Tickets%20(" + encodeURIComponent(name) + "%2C" + tcks + "%2C" + day + "%2C" + encodeURIComponent(ref) + ")";
+      var note = "&note=PlayTak2016%20Tickets%20(" + encodeURIComponent(name) + "%2C" + tcks + "%2C" + day + "%2C" + encodeURIComponent(ref) + ")";
       url = url + amount + note;
       window.location.href = url;
       return false;
