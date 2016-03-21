@@ -58,7 +58,7 @@ $(document).ready(function() {
     $("#navUpcoming2").addClass("active");
 
     $("#venmo-btn").click(function() {
-      var url = "https://venmo.com/?txn=pay&recipients=Shreshth&audience=public";
+      var url = "https://venmo.com/?txn=pay&recipients=2156810793&audience=public";
       var tcks = $("#ticketNumber").val();
       var amt = tcks * 9;
       if (tcks >= 6)
