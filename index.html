@@ -2,6 +2,7 @@
 <head>
   <title>PlayTak 2016 Tickets</title>
   <link rel="shortcut icon" href="http://www.upenn.edu/sites/default/files/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -24,148 +25,165 @@
   <meta property="og:description" content="Use this site to purchase tickets for Sons of the Prophet using Venmo!"/>
 </head>
 <body>
-<div class="main">
-  <div id="header" style="background-color: #010101;">
-    <div class="container" style="background-color: #010101;" align="center">
-      <img src="images/sotp.png" style="width: 240px">
-    </div>
-  </div>
-    <div class="container" align="center">
+<div id="all">
+    <div id="notFooter">
+      <!-- <div class="container" id="header" align="center">
+        <a href="/"><img src="/NaatakLogo.png" style="height:42px; margin-top: 16px;"></a>
+      </div> -->
+      <div id="headbar">
+        <div class="container" align="left">
+          <img id="headlogo" src="images/TACeTickets.png">
+        </div>
+      </div>
+      <br>
+      <div class="container" align="center">
         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-            <h3>
-              Sons of the Prophet<br><br>
-              <small>
-                Written by Stephen Karam
-                <br><br>
-                Directed by Kevin Rodden
-                <br><br>
-                Produced by Shreya Zaveri
-              </small>
-            </h3>
-            <br>
-            <div class="row">
-              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" align="left">
-                <form class="form-horizontal">
-                  <div class="form-group" id="divName">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Name (or group's name)</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="nameInput" placeholder="What's your name?">
-                    </div>
-                  </div>
-                  <div class="form-group" id="divTck">
-                    <label for="inputPassword3" class="col-sm-2 control-label"># Tickets</label>
-                    <div class="col-sm-10">
-                      <input type="number" class="form-control" id="ticketNumber" placeholder="How many tickets do you want?">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputDate" class="col-sm-2 control-label">Show Date</label>
-                    <div class="col-sm-10">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" value="Thu">
-                          <!-- <input type="radio" name="optionsRadios" value="Fri" disabled> -->
-                          Thursday, March 24 at 8:00 PM
-                          <!-- <span style="color:red;">(Ticket sales for Friday are closed. You can buy tickets at the door)</span> -->
-                        </label><br>
-                        <label>
-                          <input type="radio" name="optionsRadios" value="Fri">
-                          Friday, March 25 at 8:00 PM
-                          <!-- <span style="color:red;">(Ticket sales for Saturday are closed. You can STILL buy tickets at the door, though!)</span> -->
-                        </label><br>
-                        <label>
-                          <input type="radio" name="optionsRadios" value="Sat">
-                          Saturday, March 26 at 5:00 PM
-                          <!-- <span style="color:red;">(Ticket sales for Saturday are closed. You can STILL buy tickets at the door, though!)</span> -->
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputRef" class="col-sm-2 control-label">Referred</label>
-                    <div class="col-sm-10">
-                      <select class="form-control" id="refname">
-                        <option value="None">None</option>
-                        <option value='Alicia Lu'>Alicia Lu</option>
-                        <option value='Allison Day'>Allison Day</option>
-                        <option value='Anna Dailey'>Anna Dailey</option>
-                        <option value='Ardita Koka'>Ardita Koka</option>
-                        <option value='Carly Miron'>Carly Miron</option>
-                        <option value='Chad Haddad'>Chad Haddad</option>
-                        <option value='Claris Park'>Claris Park</option>
-                        <option value='Danielle Freid'>Danielle Freid</option>
-                        <option value='Danny Fradin'>Danny Fradin</option>
-                        <option value='Elijah Cory'>Elijah Cory</option>
-                        <option value='Emma Lee'>Emma Lee</option>
-                        <option value='Grayce Hoffman'>Grayce Hoffman</option>
-                        <option value='Greg Olberding'>Greg Olberding</option>
-                        <option value='Irtaza Ali'>Irtaza Ali</option>
-                        <option value='Jordan Miller'>Jordan Miller</option>
-                        <option value='Josh Ogunleye'>Josh Ogunleye</option>
-                        <option value='Kevin Rodden'>Kevin Rodden</option>
-                        <option value='Kyla Balkan'>Kyla Balkan</option>
-                        <option value='Meerabelle Jesuthasan'>Meerabelle Jesuthasan</option>
-                        <option value='Meghan Swyryn'>Meghan Swyryn</option>
-                        <option value='Mikey Miller'>Mikey Miller</option>
-                        <option value='Mikie Sakanaka'>Mikie Sakanaka</option>
-                        <option value='Mounika Burugupalli'>Mounika Burugupalli</option>
-                        <option value='Noah Lee'>Noah Lee</option>
-                        <option value='Percia Verlin'>Percia Verlin</option>
-                        <option value='Priyanshi Pokharna'>Priyanshi Pokharna</option>
-                        <option value='Reya Zaveri'>Reya Zaveri</option>
-                        <option value='Rohan Bhide'>Rohan Bhide</option>
-                        <option value='Sam Warrick'>Sam Warrick</option>
-                        <option value='Sarah Zerod'>Sarah Zerod</option>
-                        <option value='Shaishvi Shrivastava'>Shaishvi Shrivastava</option>
-                        <option value='Shreshth Khilani'>Shreshth Khilani</option>
-                        <option value='Susanna Jaramillo'>Susanna Jaramillo</option>
-                        <option value='Taha Tariq'>Taha Tariq</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <span style="color: #FF0000;">You aren't done after hitting this button.</span><br>
-                      You will be redirected to Venmo, where you must complete the payment.<br>
-                      If you are not logged in to Venmo already, the link will take you nowhere and a ticket purchase will not be registered, so please take a second to do that in another tab. 
-                      <button class="btn btn-default" id="venmo-btn" type="button">Go to Venmo</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" align="left">
-                <h5>Ticket Pricing:</h5> 
-                <ul>
-                  <li>$10 is the price at the door with a Penn Card and $12 without, so buy now :)</li>
-                  <li>Tickets cost only $9 here!</li>
-                </ul>
-                <h5>Terms and Conditions:</h5>
-                <ul>
-                  <li>Online ticketing redirects you to a venmo transaction. Your ticket will only be reserved once you complete this venmo payment.</li>
-                  <li>A computer program processes this, so make sure you don't change the description.</li>
-                  <li>Once you complete the payment, all you have to do is show up to the venue and collect your ticket. Please be there earlier than the show time.</li>
-                  <li>We reserve the right to return your money within 12 hours if we cannot accomodate you.</li>
-                </ul>
+          <div class="row">
+            <div class="col-md-4 col-xs-6">
+              <img src="images/sotpcut.png" style="width: 100%;">
+            </div>
+            <div class="col-md-8 col-xs-6">
+              <h3>
+                <small>The Pennsylvania Players and PenNaatak Theatre present...</small><br><br>
+                Sons of the Prophet<br>
+                <small>Written by <b>Stephen Karam</b>, directed by <b>Kevin Rodden</b>, and produced by <b>Shreya Zaveri</b></small>
+              </h3>
+              <br>
+              <div class="row">
+                <div class="col-xs-6">
+                  <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                  <p><b>Thursday</b>, March 24 at 8:00 PM<br><b>Friday</b>, March 25 at 8:00 PM<br><b>Saturday</b>, March 26 at 5:00 PM</p>
+                </div>
+                <div class="col-xs-6">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  <p><b>Harold Prince Theatre</b> at the Annenberg Center</p>
+                </div>
               </div>
             </div>
-        </div>
+          </div>
+          <br>
+          <div align="center">
+            <h5><span style="color: #FF0000;">CAUTION: Please log in to <a href="https://venmo.com/" target="_blank">Venmo</a> BEFORE you complete this form. If you do not do this, you will not be correctly redirected and will not have a ticket.</span></h5>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" align="left">
+              <form class="form-horizontal">
+                <div class="form-group" id="divName">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Name (or group's name)</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nameInput" placeholder="What's your name?">
+                  </div>
+                </div>
+                <div class="form-group" id="divTck">
+                  <label for="inputPassword3" class="col-sm-2 control-label"># Tickets</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="ticketNumber" placeholder="How many tickets do you want?">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputDate" class="col-sm-2 control-label">Show Date</label>
+                  <div class="col-sm-10">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" value="Thu">
+                        <!-- <input type="radio" name="optionsRadios" value="Fri" disabled> -->
+                        Thursday, March 24 at 8:00 PM
+                        <!-- <span style="color:red;">(Ticket sales for Friday are closed. You can buy tickets at the door)</span> -->
+                      </label><br>
+                      <label>
+                        <input type="radio" name="optionsRadios" value="Fri">
+                        Friday, March 25 at 8:00 PM
+                        <!-- <span style="color:red;">(Ticket sales for Saturday are closed. You can STILL buy tickets at the door, though!)</span> -->
+                      </label><br>
+                      <label>
+                        <input type="radio" name="optionsRadios" value="Sat">
+                        Saturday, March 26 at 5:00 PM
+                        <!-- <span style="color:red;">(Ticket sales for Saturday are closed. You can STILL buy tickets at the door, though!)</span> -->
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputRef" class="col-sm-2 control-label">Referred</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" id="refname">
+                      <option value="None">None</option>
+                      <option value='Alicia Lu'>Alicia Lu</option>
+                      <option value='Allison Day'>Allison Day</option>
+                      <option value='Anna Dailey'>Anna Dailey</option>
+                      <option value='Ardita Koka'>Ardita Koka</option>
+                      <option value='Carly Miron'>Carly Miron</option>
+                      <option value='Chad Haddad'>Chad Haddad</option>
+                      <option value='Claris Park'>Claris Park</option>
+                      <option value='Danielle Freid'>Danielle Freid</option>
+                      <option value='Danny Fradin'>Danny Fradin</option>
+                      <option value='Elijah Cory'>Elijah Cory</option>
+                      <option value='Emma Lee'>Emma Lee</option>
+                      <option value='Grayce Hoffman'>Grayce Hoffman</option>
+                      <option value='Greg Olberding'>Greg Olberding</option>
+                      <option value='Irtaza Ali'>Irtaza Ali</option>
+                      <option value='Jordan Miller'>Jordan Miller</option>
+                      <option value='Josh Ogunleye'>Josh Ogunleye</option>
+                      <option value='Kevin Rodden'>Kevin Rodden</option>
+                      <option value='Kyla Balkan'>Kyla Balkan</option>
+                      <option value='Meerabelle Jesuthasan'>Meerabelle Jesuthasan</option>
+                      <option value='Meghan Swyryn'>Meghan Swyryn</option>
+                      <option value='Mikey Miller'>Mikey Miller</option>
+                      <option value='Mikie Sakanaka'>Mikie Sakanaka</option>
+                      <option value='Mounika Burugupalli'>Mounika Burugupalli</option>
+                      <option value='Noah Lee'>Noah Lee</option>
+                      <option value='Percia Verlin'>Percia Verlin</option>
+                      <option value='Priyanshi Pokharna'>Priyanshi Pokharna</option>
+                      <option value='Reya Zaveri'>Reya Zaveri</option>
+                      <option value='Rohan Bhide'>Rohan Bhide</option>
+                      <option value='Sam Warrick'>Sam Warrick</option>
+                      <option value='Sarah Zerod'>Sarah Zerod</option>
+                      <option value='Shaishvi Shrivastava'>Shaishvi Shrivastava</option>
+                      <option value='Shreshth Khilani'>Shreshth Khilani</option>
+                      <option value='Susanna Jaramillo'>Susanna Jaramillo</option>
+                      <option value='Taha Tariq'>Taha Tariq</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <span style="color: #FF0000;">You aren't done after hitting this button.</span><br>
+                    You will be redirected to Venmo, where you must complete the payment.<br>
+                    <span style="color: #FF0000;">Once again, if you are not logged in to Venmo already, the link will take you nowhere and a ticket purchase will not be registered, so please take a second to do that in another tab.</span><br><br>
+                    <button class="btn btn-default" id="venmo-btn" type="button">Go to Venmo</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" align="left">
+              <h5>Ticket Pricing:</h5> 
+              <ul>
+                <li>$10 is the price at the door with a Penn Card and $12 without, so buy now :)</li>
+                <li>Tickets cost only $9 here!</li>
+                <li>Groups of 6 or more pay $8 per ticket!</li>
+              </ul>
+              <h5>Terms and Conditions:</h5>
+              <ul>
+                <li>Online ticketing redirects you to a venmo transaction. Your ticket will only be reserved once you complete this venmo payment.</li>
+                <li>A computer program processes this, so make sure you don't change the description.</li>
+                <li>Once you complete the payment, all you have to do is show up to the venue and collect your ticket. Please be there earlier than the show time.</li>
+                <li>We reserve the right to return your money within 12 hours if we cannot accomodate you.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </div>
-  <div id="footer" style="background-color: #010101;">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <div class="container" style="background-color: #010101; padding-top: 16px; padding-bottom: 16px;" align="center">
-        <div class="col-xs-12" align="center">
-            <a href="http://www.vpul.upenn.edu/pac/">
-                <img src="images/PAC_Badge.png" class="footer_img invert_image" style="width: auto; height: 24px; padding-right: 8px;">
-            </a>
-            <a href="https://github.com/shreshthkhilani/PlayTak2016">
-                <img src="images/GitHub-Mark-Light-64px.png" class="footer_img" style="width: 32px; height: auto; padding-right: 8px;">
-            </a>
-            <a href="https://www.facebook.com/events/974638075950450/">
-                <img src="images/FB-f-Logo__white_29.png" class="footer_img" style="width: 32px; height: auto; padding-right: 8px;">
-            </a>
-        </div>
+
     </div>
-  </div>
+    <div id="footer" style="background-color: #010101;">
+      <div class="container" style="background-color: #010101; padding-top: 16px; padding-bottom: 16px;" align="center">
+          <div class="col-xs-12" align="center">
+              <a href="https://www.facebook.com/events/974638075950450/">
+                  <img src="images/FB-f-Logo__white_29.png" class="footer_img" style="width: 32px; height: auto; padding-right: 8px;">
+              </a>
+          </div>
+      </div>
+    </div>
 </div>
 </body>
 </html>

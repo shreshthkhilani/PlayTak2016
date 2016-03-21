@@ -2,3 +2,34 @@
 	-webkit-filter: invert(100%); 
 	filter: invert(100%);
 }
+
+html, body {
+	min-height:100%;
+	height:100%;
+	width: 100%;
+}
+
+#all {
+	height: 100%;
+}
+
+#notFooter {
+	min-height: 94% !important;
+}
+
+#footer {
+	min-height: 6%;
+}
+
+#headbar {
+	background-color: #FFEA00 !important;
+	width: 100% !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#headlogo {
+	height: 42px !important;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
